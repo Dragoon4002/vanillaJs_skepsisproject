@@ -18,7 +18,7 @@ async function fetchMovies() {
       const data = await response.json();
   
       // Logging the result
-      console.log("Movies Data:", data.data.data);
+      console.log("Product Data:", data.data.data);
       products = data.data.data;
       products.forEach(product => {
         const card = document.createElement('div');
