@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: white;color: black;}
+        body .product_card{
+            width: 20%;
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: lightgrey;
+            color: black;
+        }
+        #container{display: flex;flex-wrap: wrap; margin-top: 30px;}
+
+        body.dark{background-color: black; color: white;}
+        body.dark .product_card{
+            width: 20%;
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(95, 95, 95);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="Title">Product Gallery</h1>
+            <button id="flip">Dark Mode Off</button>
+        </nav>
+    </header>
+    <iframe src="https://vidsrc.xyz/embed/movie/tt5433140" height="500px" width="1000px" referrerpolicy="origin"></iframe>
+    <main id="container"></main>
+    <script src="index.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
